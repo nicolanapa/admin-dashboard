@@ -8,7 +8,7 @@
 
 .dash-central {
     display: grid;
-    grid-template-columns: 1fr 2.9fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .dashboard {
@@ -53,10 +53,13 @@
 
 .header {
     display: grid;
-    grid-template-columns: 60% 10% 10% 20%;
+    grid-template-columns: 50% 10% 10% 1fr; /* 2 columns with fixed width of 100px each */
+    grid-auto-columns: 5%; /* meaning any additional columns created implicitly (beyond the two defined) will have a width of 50px */
     grid-template-rows: 10%;
-    grid-auto-rows: 15%;
-    grid-auto-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-auto-rows: 20%;
+    padding: 20px 10px -15px 30px;
+    margin-top: 10px;
+    border-bottom: 2px solid black;
 }
 
 label {
@@ -66,4 +69,50 @@ label {
 
 input {
     width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    border-style: none;
+    border: 1px solid none;
+    background-color: gray;
+    color: white;
+}
+
+#image-profile2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: center;
+    padding-left: 10px;
+    margin-right: -80px;
+}
+
+#saluto {
+    padding-left: 40px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    text-align: center;
+    align-self: center;
+}
+
+#novità {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-style: none;
+    width: 100px;
+    margin: 20px;
+    background-color: #1992d4;
+    color: white;
+}
+
+#name-top {
+    text-align: end;
+    padding-right: 40px;
+}
+
+#image-profile1 {
+    padding-left: 250%;
 }
