@@ -1,9 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "Roboto Flex", "roboto", system-ui;
 }
 
 .dash-central {
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
+
+.dashboard {
+    color: white;
+    background-color: #1992d4;
+    font-weight: 650;
+    font-size: 18px;
+    padding: 20px 10px 30px 20px;
+}
+
+.dashboard > div a:link {
+    text-decoration-line: none;
+}
+.dashboard > div a:visited {
+    color: white;
+}
+
+.dashboard > :nth-child(1) {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.dashboard > :nth-child(8) {
+    padding-top: 30px;
+}
+
+.dashboard > div img {
+    margin: 5px 20px 0 0;
+    padding-top: 6px;
+}
+
